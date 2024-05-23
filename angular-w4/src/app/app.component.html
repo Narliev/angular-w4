@@ -1,0 +1,17 @@
+<div class="row">
+    <div class="column">
+        <app-traffic-light color="green" [emer]="emergencyTag"></app-traffic-light>
+    </div>
+    <div class="column2">
+        <div class="row">
+            <app-traffic-light class="rotate1" color="red" [emer]="emergencyTag"></app-traffic-light>
+        </div> 
+        <div><button (click)="emergency()" [disabled]="emergencyOn">Авария</button></div>
+        <div class="row">
+            <app-traffic-light class="rotate2" color="red" [emer]="emergencyTag"></app-traffic-light>
+        </div> 
+    </div>  
+    <div class="column">
+        <app-traffic-light class="rotate3" color="green" [emer]="emergencyTag"></app-traffic-light>
+    </div>
+</div>

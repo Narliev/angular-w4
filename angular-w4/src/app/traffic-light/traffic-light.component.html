@@ -1,0 +1,8 @@
+<div class="container">
+  <div class="traffic-light">
+    <div class="light red" [ngClass]="{'activeRed': color === 'red'}"></div>
+    <div class="light yellow" [ngClass]="{'activeYellow': color === 'yellow'}"></div>
+    <div class="light green" [ngClass]="{'activeGreen': color === 'green'}"></div>
+  </div>
+</div>
+<button (click)="buttonCrossing()" class="crossing" [disabled]="color == 'red' || !'emer'">Пресечи</button>
